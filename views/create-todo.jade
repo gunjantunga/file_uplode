@@ -1,0 +1,18 @@
+extends ./copy.jade
+block main
+    div#containt
+        p(class="sMsg") #{sMsg} 
+        p(class="eMsg") #{eMsg}
+        div
+            form(action="/create-todo",method="post")
+                div
+                    label What to do
+                    br
+                    input(type="text",name="todoText")
+                div
+                    label Timing
+                    br
+                    input(type="text",name="todoTiming")
+                br
+                input(type="submit",name="create todo")
+             

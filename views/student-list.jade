@@ -1,0 +1,12 @@
+extends ./copy.jade
+block main
+    div#containt
+        - for(let i=0;i<studentList.length;i++){
+
+            div
+                h2 #{i+1}
+                img(src= "/pics/#{studentList[i].pic}")
+                h2 Name: #{studentList[i].firstName} #{studentList[i].lastName}
+                p age: #{studentList[i].age}
+                p address : #{studentList[i].address}
+        -}

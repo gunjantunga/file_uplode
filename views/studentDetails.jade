@@ -1,0 +1,27 @@
+extends ./copy.jade
+block main
+    div#containt
+        p.sMsg #{sMsg}
+        form(action="/student-detail",method="post",enctype="multipart/form-data")
+            div
+                label First name
+                br
+                input(type="text",name="firstName")
+            div
+                label Last name
+                br
+                input(type="text",name="lastName")
+            div 
+                label Student age
+                br
+                input(type="text",name="age")
+            div
+                label Student Address
+                br
+                textarea(name="address", cols="30", rows="4")
+            div
+                label Upload image
+                br
+                input(type="file",name="studentImage",accept="image/png,image/jpeg")
+            br
+            input(type="submit",value="save")

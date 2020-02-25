@@ -1,0 +1,39 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+#header{
+    display: flex;
+    height: 50px;
+    background-color: lightblue;
+    align-items: center;
+}
+#footer{
+    height: 100px;
+    background-color: burlywood;
+}
+
+#header a{
+    margin-right: 20px;
+}
+
+#containt{
+    display: flex;
+    min-height: 600px;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#containt > div{
+    width:400px;
+}
+.eMsg{
+    color: red;
+    font-weight: bold;
+}
+.sMsg{
+    color: green;
+    font-weight: bold;
+}
+

@@ -1,0 +1,10 @@
+extends ./copy.jade
+block main
+    div#containt
+        - for(let i=0;i<allTodos.length;i++){
+
+            div
+                h2 #{i+1}
+                p Todo: #{allTodos[i].todoText}
+                p Timing: #{allTodos[i].todoTiming}
+        -}
